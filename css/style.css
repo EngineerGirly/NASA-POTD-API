@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Strait', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* img{
+  display: block;
+  margin: 0 auto;
+} */
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*style*/
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+html {
+  height: 100%;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/spacebg.jpg);
+  background-size: 1066px;
+  background-position: center;
+  z-index: -1;
+  animation: zoomInOut 15s infinite alternate; 
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.top {
+  /* background: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
+  height: 30%;
+}
+
+.bottom {
+  height: 80%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.one {
+  background-size: 1566px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.two {
+  display: flex;
+  align-items: center;
+}
+
+.one, .two {
+  min-width: 50%;
+  height: 100%;
+}
+
+input {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  background: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+button {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: 500px;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 10px;
+  height: 400px;
+}
+h1, h2, h3 {
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+h3 {
+  padding: 0 100px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.hidden {
+	display: none;
+} 
