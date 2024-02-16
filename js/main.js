@@ -17,6 +17,7 @@ function getFetch(){
       .then(data => {
         console.log(data)
         document.querySelector('.bottom').classList.remove("hidden")
+        document.querySelector('.top').classList.remove("view")
 
         if (data.media_type === 'image') {
           document.querySelector('img').src = data.hdurl

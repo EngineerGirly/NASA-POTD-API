@@ -148,3 +148,26 @@ h2, h3 {
 .hidden {
 	display: none;
 } 
+
+@media screen and (max-width: 1000px) {
+  body {
+    display: block;
+  }
+  .one, .two {
+    display: block;
+  }
+  .view {
+    height: 100vh;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  img {
+    min-width: 100%;
+    padding: 0 5%;
+  }
+  h3 {
+    padding: 0 50px;
+  }
+
+}
